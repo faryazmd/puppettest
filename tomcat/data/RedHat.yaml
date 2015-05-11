@@ -1,0 +1,13 @@
+---
+tomcat::install::packages:
+ - 'wget'
+tomcat::install::tomcat:
+ - '/opt/tomcat'
+tomcat::install::java:
+ - '/opt/java'
+tomcat::install::version:
+ - '7.0.59'
+tomcat::install::tomcat_archive:
+ - 'http://mirror.reverse.net/pub/apache/tomcat/tomcat-7/v7.0.59/bin/apache-tomcat-7.0.59.tar.gz'
+tomcat::install::java_archive:
+ - '--no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/7u75-b13/jdk-7u75-linux-x64.tar.gz"'
